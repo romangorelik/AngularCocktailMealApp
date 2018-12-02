@@ -1,0 +1,10 @@
+<div>
+  <input placeholder='search' [(ngModel)]='searchInput'/>
+  <button (click)='getMealsNow()'>Search</button>
+</div>
+
+<div>
+  {{mealName}}
+</div>
+
+<app-results-meal (likedMeal)='clickedOnMeal($event)'[mealsChild]='meals'></app-results-meal>

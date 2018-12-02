@@ -1,0 +1,8 @@
+<div *ngFor='let drink of drinksChild.drinks'>
+  <br/>
+  <div>{{drink.strDrink | uppercase}}</div>
+  <div>{{drink.strAlcoholic | lowercase}}</div>
+  <img [src]='drink.strDrinkThumb'/>
+  <br/>
+  <button (click)='addLike(drink.strDrink)'>Like</button>
+</div>

@@ -1,0 +1,8 @@
+<div *ngFor='let meal of mealsChild.meals'>
+  <br/>
+  <div>{{meal.strMeal}}</div>
+  <div>{{meal.strCategory}}</div>
+  <img [src]='meal.strMealThumb'/>
+  <br/>
+  <button (click)='addMeal(meal.strMeal)'>Like</button>
+</div>

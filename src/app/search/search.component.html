@@ -1,0 +1,11 @@
+<div>
+  <input placeholder='search' [(ngModel)]='searchInput'/>
+  <button (click)='getCocktails()'>Search</button>
+</div>
+
+<div>
+  {{drkName}}
+</div>
+
+<app-results (likeClicked)='onLikeClick($event)' [drinksChild]='drinks'></app-results>
+
